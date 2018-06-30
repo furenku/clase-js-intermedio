@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo History</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+<header>
+    <nav>
+        <ul>
+            <button onclick="loadUrl('')">
+                Inicio
+            </button>
+            <button onclick="go(0)">
+                Funcion Go 
+            </button>
+            <button onclick="back()">
+                Atrás
+            </button>
+            <button onclick="forward()">
+                Adelante
+            </button>
+            <!-- <a href="pages/otra-pagina.html"> -->
+                <button onclick="loadUrl('pages/otra-pagina.html')" >
+                    Otra Página
+                </button>
+            <!-- </a> -->
+            <!-- <a href="pages/otra-pagina-mas.html"> -->
+                <button onclick="loadUrl('pages/otra-pagina-mas.html')" >
+                    Otra Página Más
+                </button>
+            <!-- </a> -->
+            <button onclick="randomUrl()">
+                Al Azar
+            </button>
+            
+        </ul>
+    </nav>
+</header>
+
+
+<main>
+
+    <h1>
+        Página Inicial
+    </h1>
+
+</main>
+
+<div class="loader-container">
+    <div class="loader">
+        cargando...
+    </div>  
+</div>
+
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
