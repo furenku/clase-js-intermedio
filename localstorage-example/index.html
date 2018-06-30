@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LocalStorage</title>
+
+    <style>
+        .tasks .total-duration {
+            text-align: right;
+            padding: 16px 0;
+        }
+        .tasks ul {
+            margin: 0;
+            padding: 0;
+        }
+        .tasks li {
+            display: flex;
+            width: 100%;
+            margin: 0;
+
+        }
+        .tasks li > * {
+            padding: 8px;
+        }
+        .tasks li .text {
+            /* w60p */
+            width: 60%;
+        }
+
+        .tasks li .time,
+        .tasks li .duration
+         {
+            /* w20p */
+            width: 20%;
+
+            text-align: right;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <main>
+
+        <form action="">
+            <label>
+                <div>
+                    Tarea
+                </div>
+                <input type="text" name="task">
+            </label>
+            <label>
+                <div>
+                    Fecha de entrega
+                </div>
+                <input type="text" name="time">
+            </label>
+
+            <label>
+                <div>
+                    Duración
+                </div>
+                <input type="number" name="duration">
+            </label>
+
+            <input type="submit" valor="Enviar">
+
+        </form>
+
+        <section class="tasks">
+
+            <header>
+                <div class="total-duration">
+                    <span class="hours">
+                        0
+                    </span>
+                    &nbsp;horas
+                </div>
+            </header>
+            <ul></ul>
+
+        </section>
+
+    </main>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
