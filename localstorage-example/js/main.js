@@ -23,10 +23,13 @@ updateTaskListView = () => {
 
     let totalDuration = 0
 
+    totalDuration = state.taskList.reduce(
+        (p,n) => parseInt(n.duration) + p, 0 
+    )
 
     state.taskList.forEach( task => {
 
-        totalDuration += parseInt(task.duration)
+        // totalDuration += parseInt(task.duration)
 
         let newLi = document.createElement('li')
 
